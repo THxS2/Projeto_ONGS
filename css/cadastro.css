@@ -26,30 +26,22 @@
     font-weight: 500;
 }
 
-.cadastro-form input{
+.cadastro-form input,
+.cadastro-form select,
+.cadastro-form textarea {
     width: 100%;
     padding: 12px;
-    border: 2px solid #fff;
+    border: 2px solid #e0e0e0;
     border-radius: 6px;
     font-size: 1rem;
-    transition: border-color 0.3s; 
-}
-.cadastro-form select{
-    width: 100%;
-    padding: 12px;
-    border: 2px solid #fff;
-    border-radius: 6px;
-    font-size: 1rem;
-    transition: border-color 0.3s; 
+    transition: border-color 0.3s;
 }
 
-.cadastro-form textarea{
-    width: 100%;
-    padding: 12px;
-    border: 2px solid #fff;
-    border-radius: 6px;
-    font-size: 1rem;
-    transition: border-color 0.3s; 
+.cadastro-form input:focus,
+.cadastro-form select:focus,
+.cadastro-form textarea:focus {
+    border-color: #1A4D2E; /* Verde escuro */
+    outline: none;
 }
 
 .cep-search{
@@ -69,3 +61,6 @@
 .cep-search button:hover{
     background-color: #4f6f52;
 }
+
+
+
