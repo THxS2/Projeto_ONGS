@@ -14,3 +14,40 @@
     font-size: 2rem;
     font-weight: 600;
 }
+
+.cadastro-form .form-group{
+    margin-bottom: 1.5rem;
+}
+
+.cadastro-form label{
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.cadastro-form input{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s; 
+}
+.cadastro-form select{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s; 
+}
+
+.cadastro-form textarea{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s; 
+}
