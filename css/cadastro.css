@@ -62,5 +62,38 @@
     background-color: #4f6f52;
 }
 
+.submit-btn{
+    width: 100%;
+    background-color: #1e4e16;
+    color: #f1f1f1;
+    border: none;
+    padding: 14px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor:pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover{
+    background-color: #4f6f52;
+}
+
+@media (max-width: 768px) {
+    .cadastro-container {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    .cep-search {
+        flex-direction: column;
+    }
+    
+    .cep-search button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
 
 
