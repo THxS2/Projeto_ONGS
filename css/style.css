@@ -1,3 +1,4 @@
+/* Estios para seção Hero e aos botões*/
 .hero{
     text-align: center;
     padding: 60px 0;
@@ -21,3 +22,30 @@
     justify-content: center;
     gap: 20px;
 }
+
+/* Adicionando estilo a as características das factures e cards */
+
+.feactures{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.feacture-card{
+    background-color: #f1f1f1;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 40px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover{
+    transform: translateY(-5px);
+}
+
+.feature-card h3{
+    color: #1e4e16;
+    margin-bottom: 15px;
+}
+
