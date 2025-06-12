@@ -18,14 +18,62 @@
                 </ul>
         </div>
     </header>
-        <main class="container">
-            <h2>Cadastrar Necessidades</h2>
-            <form id="necessidadesForm">
-                <div class="form-group">
-                    <label for="nomeInstituicao">Nome da Instituição</label>
-                    <input type="text" id="nomeInstituicao" name="nomeInstituicao" required>
+            <main class="container">
+        <h2>Cadastrar Necessidade</h2>
+        <form id="necessidadeForm">
+            <div class="form-group">
+                <label for="nomeInstituicao">Nome da Instituição*</label>
+                <input type="text" id="nomeInstituicao" name="nomeInstituicao" required>
+            </div>
+            <div class="form-group">
+                <label for="tipoAjuda">Tipo de Ajuda*</label>
+                <select id="tipoAjuda" name="tipoAjuda" required>
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="Educação">Educação</option>
+                    <option value="Saúde">Saúde</option>
+                    <option value="Meio Ambiente">Meio Ambiente</option>
+                    <option value="Doação de Alimentos">Doação de Alimentos</option>
+                    <option value="Doação de Roupas">Doação de Roupas</option>
+                    <option value="Outros">Outros</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tituloNecessidade">Título da Necessidade*</label>
+                <input type="text" id="tituloNecessidade" name="tituloNecessidade" required>
+            </div>
+            <div class="form-group">
+                <label for="descricao">Descrição Detalhada*</label>
+                <textarea id="descricao" name="descricao" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="cep">CEP*</label>
+                <div class="form-row">
+                    <input type="text" id="cep" name="cep" required pattern="\d{5}-?\d{3}">
+                    <button type="button" id="buscarCep" class="btn-small">Buscar</button>
                 </div>
-            </form>
-        </main>
+            </div>
+            <div class="form-group">
+                <label for="rua">Rua</label>
+                <input type="text" id="rua" name="rua" readonly>
+            </div>
+            <div class="form-group">
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro" name="bairro" readonly>
+            </div>
+            <div class="form-group">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" readonly>
+            </div>
+            <div class="form-group">
+                <label for="estado">Estado</label>
+                <input type="text" id="estado" name="estado" readonly>
+            </div>
+            <div class="form-group">
+                <label for="contato">Contato* (E-mail ou Telefone)</label>
+                <input type="text" id="contato" name="contato" required>
+            </div>
+            <button type="submit" class="btn">Cadastrar Necessidade</button>
+        </form>
+    </main>
 </body>
 </html>
