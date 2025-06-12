@@ -51,3 +51,21 @@
     font-size: 1rem;
     transition: border-color 0.3s; 
 }
+
+.cep-search{
+    display: flex;
+    gap: 10px;
+}
+
+.cep-search button{
+    background-color: #1e4e16;
+    color: #f1f1f1;
+    border: none;
+    border-radius: 6px;
+    padding: 0 1rem;
+    transition: background-color 0.3s;
+}
+
+.cep-search button:hover{
+    background-color: #4f6f52;
+}
