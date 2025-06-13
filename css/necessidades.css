@@ -61,3 +61,13 @@ nav ul{
     font-size: 0.85rem;
     margin-bottom: 8px;
 }
+
+@media (max-width: 768px) {
+    .necessidades-container {
+        grid-template-columns: 1fr;
+    }
+    .filtros {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
