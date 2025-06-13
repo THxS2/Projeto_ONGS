@@ -26,4 +26,21 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Erro ao buscar CEP: ' + error.message);
         }
     };
+
+    const validarFormulario = () => {
+        const camposObrigatorios = [ 'nomeInstituicao', 'tipoAjuda', 'tituloNecessidade', 
+            'descricao', 'cep', 'contato'];
+
+        let valido = true;
+        camposObrigatorios.forEach(id => {
+            const campo = document.getElementById(id);
+            if (!campo.value.trim()) {
+                campo.classList.add('is-invalid');
+                valido = false;
+            } else {
+                campo.classList.remove('is-invalid');
+            }
+        });
+        return valido;
+    }
 });
