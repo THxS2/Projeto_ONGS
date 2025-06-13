@@ -20,5 +20,25 @@
             </nav>
         </div>
     </header>
+    <main class="container">
+        <h2>Necessidades Cadastrada</h2>
+        <div class="filtros">
+            <div class="form-group">
+                <input type="text" id="pesquisa" placeholder="Pesquisar por palavra-chave">
+            </div>
+            <div class="form-group">
+                <select id="filtroTipo">
+                    <option value="">Todos os tipos</option>
+                    <option value="Educação">Educação</option>
+                    <option value="Saúde">Saúde</option>
+                    <option value="Meio Ambiente">Meio Ambiente</option>
+                    <option value="Doação de Alimento">Doação de Alimento</option>
+                    <option value="Doação de Roupas">Doação de Roupas</option>
+                    <option value="Outros">Outros</option>
+                </select>
+            </div>
+        </div>
+        <div id="listaNecessidades" class="necessidades-container"></div>
+    </main>
 </body>
 </html>
