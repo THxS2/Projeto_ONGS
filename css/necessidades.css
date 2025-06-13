@@ -47,13 +47,12 @@ nav ul li a.active {
     border-bottom: 2px solid #fff;
 }
 
-/* Main Container */
 main.container {
     margin-top: 80px;
     padding-bottom: 40px;
 }
 
-/* Filtros */
+
 .filtros {
     display: flex;
     gap: 20px;
@@ -66,7 +65,6 @@ main.container {
     min-width: 200px;
 }
 
-/* Lista de Necessidades */
 .necessidades-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
