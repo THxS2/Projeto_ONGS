@@ -1,99 +1,128 @@
-.cadastro-container{
-    max-width: 700px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-.cadastro-title{
-    color: #1e4e16;
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.cadastro-form .form-group{
-    margin-bottom: 1.5rem;
-}
-
-.cadastro-form label{
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #333;
-    font-weight: 500;
-}
-
-.cadastro-form input,
-.cadastro-form select,
-.cadastro-form textarea {
+header {
+    position: fixed;
+    top: 0;
     width: 100%;
-    padding: 12px;
-    border: 2px solid #e0e0e0;
-    border-radius: 6px;
-    font-size: 1rem;
-    transition: border-color 0.3s;
-}
-
-.cadastro-form input:focus,
-.cadastro-form select:focus,
-.cadastro-form textarea:focus {
-    border-color: #1A4D2E; /* Verde escuro */
-    outline: none;
-}
-
-.cep-search{
+    height: 60px;
+    background-color: #1A4D2E;
     display: flex;
-    gap: 10px;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 0;
 }
 
-.cep-search button{
-    background-color: #1e4e16;
-    color: #f1f1f1;
-    border: none;
-    border-radius: 6px;
-    padding: 0 1rem;
-    transition: background-color 0.3s;
-}
-
-.cep-search button:hover{
-    background-color: #4f6f52;
-}
-
-.submit-btn{
+.header-content, header > .container {
     width: 100%;
-    background-color: #1e4e16;
-    color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 30px 0 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding: 0 30px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 0;
+    display: block;
+    transition: border-bottom 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    border-bottom: 2px solid #fff;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+main {
+    max-width: 1200px;
+    margin: 80px auto 40px;
+    padding: 0 20px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.filtros-container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    max-width: 900px;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #1A4D2E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cadastro-title {
+    text-align: center;
+    color: #1A4D2E;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    border: none !important;
+}
+
+.cadastro-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1A4D2E;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0;
     border: none;
-    padding: 14px;
-    font-size: 1.1rem;
-    border-radius: 6px;
-    cursor:pointer;
-    margin-top: 1rem;
-    transition: background-color 0.3s;
+    background-color: transparent;
 }
 
-.submit-btn:hover{
-    background-color: #4f6f52;
-}
 
-@media (max-width: 768px) {
-    .cadastro-container {
-        padding: 1.5rem;
-        margin: 1rem;
-    }
-    
-    .cep-search {
-        flex-direction: column;
-    }
-    
-    .cep-search button {
-        width: 100%;
-        padding: 12px;
-    }
-}
 
 
 
