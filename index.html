@@ -1,42 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conecta Voluntarios</title>
+    <title>Conecta Voluntários</title>
+    <link rel="stylesheet" href="css/geral.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Menu Suspenso -->
     <header>
-        <div class="container">
-            <h1>Coneta Voluntarios</h1>
+        <div class="container header-content">
+            <h1>Conecta Voluntários</h1>
             <nav>
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="cadastro.html">Cadastrar Necessidades</a></li>
+                    <li><a href="cadastro.html">Cadastrar Necessidade</a></li>
                     <li><a href="necessidades.html">Ver Necessidades</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section class="hero">
-        <h2>Conectando ONGs a voluntarios</h2>
-        <p>Uma Plataforma simple para aproximar instituições sociais de pessoas que desejam fazer a diferença em suas comunidades.</p>
+
+    <!-- Seção de Necessidades -->
+    <section class="necessidades-header">
+        <div class="container">
+            <h2>Últimas Necessidades</h2>
+            <div id="destaques-necessidades">
+                <!-- As necessidades serão carregadas via JavaScript -->
+                <p>Carregando oportunidades recentes...</p>
+            </div>
+        </div>
     </section>
 
-    <section  class="features">
-        <div class="feature-card">
-            <h3>Para ONGs</h3>
-            <p>Cadastre suas necessidades de voluntários ou doação de forma simples e rapida.</p>
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="hero">
+            <h2>Conectando ONGs a voluntários</h2>
+            <p>Uma plataforma simples para aproximar instituições sociais de pessoas que desejam fazer a diferença em suas comunidades.</p>
+            <div class="cta-buttons">
+                <a href="cadastro.html" class="btn">Cadastrar Necessidade</a>
+                <a href="necessidades.html" class="btn btn-outline">Ver Oportunidades</a>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="features">
+            <div class="feature-card">
+                <h3>Para ONGs</h3>
+                <p>Cadastre suas necessidades de voluntários ou doações de forma simples e rápida.</p>
+                <ul>
+                    <li>Divulgação gratuita</li>
+                    <li>Acesso a voluntários qualificados</li>
+                    <li>Controle das suas necessidades</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <h3>Para Voluntários</h3>
+                <p>Encontre oportunidades de ajudar perto de você.</p>
+                <ul>
+                    <li>Filtre por tipo de ajuda</li>
+                    <li>Busque por localização</li>
+                    <li>Encontre causas que combinam com você</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <h3>Impacto Social</h3>
+                <p>Juntos podemos transformar mais vidas.</p>
+                <ul>
+                    <li>+500 instituições cadastradas</li>
+                    <li>+10.000 voluntários</li>
+                    <li>100% sem custos</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Conecta Voluntários. Todos os direitos reservados.</p>
+            <p>Contato: contato@conectavoluntarios.org.br</p>
         </div>
-        <div class="feature-card">
-            <h3>Para Voluntários</h3>
-            <p>Encontre oportunidades de ajudar perto de você, filtrando por tipo de ajuda ou localização.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Impacto Social</h3>
-            <p>Juntos podemos ampliar o alcance das ações sociais e transformar mais vidas.</p>
-        </div>
-    </section>
+    </footer>
 </body>
 </html>
