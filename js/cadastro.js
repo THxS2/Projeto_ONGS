@@ -43,4 +43,40 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         return valido;
     }
+
+    buscarCepBtn.addEventListener('click', buscarCEP);
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        if (!validarFormulario()) {
+            alert('Preencha todos os campos obrigatórios!');
+            return;
+        }
+
+        const novaNecessidade = {
+            id: Date.now(),
+            nomeInstituicao: document.getElementById('nomeInstituicao').value,
+            tipoAjuda: document.getElementById('tipoAjuda').value,
+            tituloNecessidade: document.getElementById('tituloNecessidade').value,
+            descricao: document.getElementById('descricao').value,
+            endereco: {
+                cep: document.getElementById('cep').value,
+                rua: document.getElementById('rua').value,
+                bairro: document.getElementById('bairro').value,
+                cidade: document.getElementById('cidade').value,
+                estado: document.getElementById('estado').value
+            },
+            contato: document.getElementById('contato').value,
+            dataCadastro: new Date().toISOString()
+        };
+
+        const necessidades = JSON.parse(localStorage.getItem('necessidades')) || [];
+        necessidades.push(novaNecessidade);
+        localStorage.setItem('necessidades', JSON.stringify(necessidades));
+        
+        alert('Cadastro realizado com sucesso!');
+        form.reset();
+        window.location.href = 'necessidades.html';
+    });
 });
